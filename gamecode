@@ -1,0 +1,22 @@
+import random
+
+options = ["rock", "paper","scissors"]
+
+user =input("make your choice - rock , paper, or scissors: ")
+
+computer = random.choice(options)
+
+print("your choice :", user)
+
+print("comp choice:",computer)
+
+if user == computer:
+  print("its a tie")
+elif user =="rock" and computer =="scissors":
+  print("you win")
+elif user=="paper" and computer =="rock":
+  print("you win")
+elif user=="scissors" and computer =="paper":
+  print("you win")
+else :
+    print("computer wins")
